@@ -1,0 +1,21 @@
+{
+  "name": "Terraform Azure (Apple Silicon Safe)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "hashicorp.terraform",
+        "ms-azuretools.vscode-azurecli"
+      ],
+      "settings": {
+        "terraform.formatting.formatOnSave": true
+      }
+    }
+  },
+  "mounts": [
+    "source=${localEnv:HOME}/.azure,target=/home/vscode/.azure,type=bind,consistency=cached"
+  ],
+  "remoteUser": "vscode"
+}
