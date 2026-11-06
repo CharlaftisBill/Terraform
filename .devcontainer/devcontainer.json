@@ -10,7 +10,8 @@
     "vscode": {
       "extensions": [
         "hashicorp.terraform",
-        "ms-azuretools.vscode-azurecli"
+        "ms-azuretools.vscode-azurecli",
+        "janjoerke.align-by-regex"
       ],
       "settings": {
         "terraform.formatting.formatOnSave": true
