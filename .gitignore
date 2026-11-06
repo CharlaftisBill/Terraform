@@ -45,3 +45,5 @@ terraform.rc
 
 # Azure CLI authentication token & profile directory
 .azure/
+.env
+TODO.md
